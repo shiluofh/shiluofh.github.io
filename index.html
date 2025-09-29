@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<style>
+.tab-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    border-top: 1px solid #ccc;
+}
+.tab-item {
+    text-align: center;
+    color: #888;
+    font-size: 12px;
+    flex: 1;
+}
+.tab-item.active {
+    color: #3b82f6;
+}
+.tab-icon {
+    font-size: 20px;
+}
+
+/* 关键修复1：清除body默认边距，避免顶部基础空白 */
+body {
+    margin: 0;
+    padding-bottom: 60px; /* 预留底部tab栏高度，防止内容被遮挡 */
+}
+</style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>失落科技-失落后台</title>
+    
+    <!-- Core Meta Tags -->
+    <meta name="description" content="失落的个人主页，专注于Web全栈开发，擅长前端架构设计和后端系统开发。提供专业的技术分享和项目展示，期待与您的合作。">
+    <meta name="keywords" content="冰冰,冰冰网络,冰冰博客,冰冰网络工作室,个人主页,全栈开发,Web开发,前端开发,后端开发,JavaScript,Python,React,Node.js,技术博客,程序员,软件工程师,网站建设,技术咨询">
+    <meta name="author" content="失落">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="language" content="zh-CN">
+    <meta name="revisit-after" content="7 days">
+    <meta name="generator" content="Visual Studio Code">
+    <meta name="theme-color" content="#3b82f6">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- SEO增强标签 -->
+    <meta name="rating" content="general">
+    <meta name="distribution" content="global">
+    <meta name="copyright" content="© 2025 失落 (MC). All rights reserved. Licensed under MIT License.">
+    <meta name="reply-to" content="mcwlgzs@qq.com">
+    <meta name="owner" content="失落">
+    <meta name="url" content="https://mcwl.net">
+    <meta name="identifier-URL" content="https://mcwl.net">
+    <meta name="category" content="technology, web development, programming, portfolio">
+    <meta name="coverage" content="Worldwide">
+    <meta name="target" content="developers, clients, recruiters, tech enthusiasts">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="失落科技-失落个人主页">
+    <meta property="og:description" content="失落的个人主页，专注于Web全栈开发，擅长前端架构设计和后端系统开发。提供专业的技术分享和项目展示，期待与您的合作。">
+    <meta property="og:image" content="6">
+    <meta property="og:url" content="67">
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="失落的个人网站">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="article:author" content="失落">
+    <meta property="article:modified_time" content="2024-03-20T12:00:00+08:00">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="失落网络-失落个人主页">
+    <meta name="twitter:description" content="冰冰的个人主页，专注于Web全栈开发，擅长前端架构设计和后端系统开发。提供专业的技术分享和项目展示。">
+    <meta name="twitter:image" content="68">
+    <meta name="twitter:creator" content="@yourtwitterhandle">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="192x192" href="/assets/images/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/android-chrome-512x512.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#3b82f6">
+    
+    <!-- Preconnect and Resource Hints -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <链接 rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <链接 rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <链接 rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+    <! -- 性能优化 -->
+    <链接 rel="预加载" href="/assets/css/main.css" 作为="样式">
+    <链接 rel="预加载" href="/assets/images/avatar.png" 作为="图像">
+    <链接 rel="预取" href="/assets/images/muxi.jpg">
+
+    <! -- 资源提示 -->
+    <元 姓名="格式检测" 内容="电话=否，日期=否，电子邮件=否，地址=否">
+    <元 姓名="配色方案" 内容="轻">
+    <元 姓名="支持的颜色方案" 内容="轻">
+    
+    <！--规范URL-->
+    <链接 rel="规范" href="https://mcwl.net/">
+    
+    <! -- 引入外部资源 -->
+    <脚本 src="https://cdn.tailwindcss.com"></脚本>
+    <脚本 src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></脚本>
+    <脚本 src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></脚本>
+    <链接 href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="样式表">
+    <链接 rel="样式表" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- 引入自定义CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+<style>
+* {font-family: MainFont, sans-serif;}
+@font-face {font-family: 'MainFont';src: url('/css/Font.woff2') format('woff2');font-weight: normal;font-style: normal;}
+.nav-drawer .mdi {font-size: 1.1rem;width: 1.2em;text-align: center;margin-right: 0.5rem;}
+.导航抽屉 一个:盘旋 我 {改变: 规模(1.1);过渡: 改变 0.2s 缓解;改变: translateY(-6PX);}
+
+/* 关键修复2：优化粒子背景定位，避免占用顶部空间 */
+#粒子-js {
+    位置: 确定的;
+    顶端: 0;
+    左: 0;
+    宽度: 100%;
+    高度: 100%;
+    Z指数: -1; /* 确保背景在内容下方 */
+}
+
+/*关键修复3：调整主容器顶部间距(根据需求可微调my-2)*/
+主要的 {
+    填充: 10PX; /* 增加左右内边距，避免内容贴边 */
+}
+</风格>
+<!-- 结构化数据 -->
+<脚本 类型="应用程序/LD+json”>
+    {
+"@上下文"："https://schema.org"，
+"@type"："人员"，
+"名称"："失落"，
+"alternatename"："MC"，
+"jobTitle"："全栈开发工程师"，
+"描述"："专注于Web全栈开发，擅长前端架构设计和后端系统开发，热衷技术创新与分享"，
+"图像"："https://mcwl.net/assets/images/avatar.png"，
+"URL"："https://mcwl.net"，
+“相同”：[
+"https://github.com/mcwlgzs"，
+"https://juejin.cn/user/3499111424736713"，
+"微信：//联系人/个人资料/您的微信ID"，
+"tencent://message/？uin=38983891"
+      ],
+"knowsAbout"：[
+"Web开发"，
+"前端架构",
+"后端开发",
+"JavaScript"，
+"Python"，
+"反应"，
+"Node.js"，
+"TypeScript"，
+"HTML5"，
+"CSS3"，
+"Git"
+      ],
+"worksFor"：{
+"@type"："组织"，
+"名称"："自由开发者"
+      },
+"地址"：{
+"@type"："PostalAddress"，
+"addressCuntry"："CN"
+      },
+"alumniOf"：{
+"@type"："教育组织"，
+"名称"：<
+      },
+“裁决”：[
+"相关奖项或认证",
+"技术认证"
+<,
+“hasOccupation”：{
+"@type"："职业"，
+"名称"：<，
+"职业类别"：<，
+“技能”：[
+"JavaScript"，
+"Python"，
+"反应"，
+"Node.js"，
+"Web开发"
+        ]
+      }
+<
+</<>
+</<>
+<<>
+<!<元 姓名=
+<<<元>=姓名班级="覆盖范围"咏叹调咏叹调隐藏咏叹调隐藏咏叹调隐藏></
+
+<<<=元=姓名="HandheldFriendly"=
+<<链接将<
+<<=链接<=rel=元>
+<div班级=
+<!--左侧个人信息=
+<div班级="md:col-span-1柔性柔性-col项目-中心md：项目-拉伸">
+<!<！--打开图形/社交媒体元标记-->头像区域 -->头像区域 -->
+<<=
+<<=
+<div<=
+<IMG<=元alt=财产="og:url"装载=内容="128"高>="128">
+</<>元 财产=
+<<元=
+<<=元"文本-白色文本-xs"=财产=
+</
+</<>
+</div>
+
+<!<元 姓名=
+<<=元 姓名="twitter：标题"=内容="失落网络-失落个人主页">
+<<=元=
+<<=元>姓名=
+</
+<div班级=
+<跨度身<！--F阿维康-->="键入文本"=班级="text-blue-600 text-sm sm：以文本为底的字体-介质"=
+</div>
+<<=链接>
+<<=链接=rel=
+<跨度i<=链接>
+</<>
+<!<链接 rel=
+<<=元=姓名=
+<元itemprop="图像"内容="HTTPS图像"内容="htmi内容="：//米特姆道具="图像"内容="HTTPS图像"内容="htmi内容="：//米
